@@ -7,7 +7,27 @@
 }
 
 .home {
+    position: relative;
     background: linear-gradient(135deg, #000000, #0d0d0d, #1a1a1a, #000000);
+    width: 100vw;
+    height: 100vh;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    & h1 {
+        font-size: 38px;
+        color: #fff;
+    }
+}
+
+.home2 {
+    position: relative;
+    background-image: url(Screenshot_20250612_110754_WhatsApp\(1\).jpg);
+    background-size: cover;
+    background-position: center - 15px;
     width: 100vw;
     height: 100vh;
     gap: 40px;
@@ -62,9 +82,12 @@ a {
 
 .navbar {
     width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: #fff;
     font-size: 15px;
+    position: absolute;
+    top: 15px;
 }
