@@ -17,9 +17,13 @@
     text-align: center;
     justify-content: center;
     & h1 {
-        font-size: 45px;
+        font-size: 38px;
         color: #fff;
     }
+}
+
+a {
+    text-decoration: none;
 }
 
 .perfil {
@@ -49,4 +53,18 @@
     background-size: cover;
     border-radius: 10px;
     background-image: url(20250714_1655_Animação\ 3D\ Vermelha_remix_01k0580y0feajs6petdrvthnwf.png);
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 15px;
 }
