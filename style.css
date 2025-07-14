@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
     & h1 {
         font-size: 45px;
@@ -26,7 +27,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 15px; 
     & p {
         font-size: 20px;
         font-weight: 400;
@@ -35,9 +36,17 @@
 }
 
 .foto {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
     border-radius: 10px;
-    background-image: url(Screenshot_20250612_110754_WhatsApp\(1\).jpg);
+    background-image: url(20250714_1649_Moça\ Animada\ 3D_remix_01k057pn9pf6t8a8mf2n6ksqv9.png);
+}
+
+.foto1 {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 10px;
+    background-image: url(20250714_1655_Animação\ 3D\ Vermelha_remix_01k0580y0feajs6petdrvthnwf.png);
 }
