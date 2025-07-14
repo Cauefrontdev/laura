@@ -33,12 +33,21 @@
 
             </span>
             <div class="netflix-buttons">
-            <button class="btn-watch">
+            <button class="btn-watch" onclick="abrirVideo()">
                 ▶ Assistir
             </button>
             <button class="btn-fav">
                 ☆ Favorito
             </button>
+            </div>
+            <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="fecharVideo()">×</span>
+                <video id="meuVideo" controls>
+                <source src="teamo.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+                </video>
+            </div>
             </div>
             <section class="netflix-section">
                 <h2>Em Alta</h2>
@@ -51,5 +60,34 @@
                 </section>
         </div>
     </div>
+    <script>
+  function abrirVideo() {
+    const modal = document.getElementById("videoModal");
+    const video = document.getElementById("meuVideo");
+
+    modal.style.display = "flex";
+    video.currentTime = 0;
+    video.play();
+  }
+
+  function fecharVideo() {
+    const modal = document.getElementById("videoModal");
+    const video = document.getElementById("meuVideo");
+
+    modal.style.display = "none";
+    video.pause();
+  }
+
+  // Fechar ao clicar fora do vídeo
+  window.addEventListener("click", function (e) {
+    const modal = document.getElementById("videoModal");
+    const content = document.querySelector(".modal-content");
+    if (e.target === modal) {
+      fecharVideo();
+    }
+  });
+</script>
+
+    
 </body>
 </html>

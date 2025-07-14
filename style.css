@@ -210,4 +210,41 @@ a {
   transform: scale(1.05);
 }
 
+.modal {
+  display: none; /* Oculto por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85); /* Fundo escuro com transparência */
+  backdrop-filter: blur(4px); /* Efeito de desfoque */
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+}
+
+.modal video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+.close-btn {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
 
